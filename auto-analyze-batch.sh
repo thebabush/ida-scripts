@@ -15,4 +15,4 @@ fi
 # Get the directory where this script is located
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-find "$DIR" -not -name ".DS_Store" -type f -print0 | xargs -n1 -0 -P10 "$SCRIPT_DIR/auto-analyze.sh"
+find "$DIR" -not -name ".DS_Store" -not -name "*.i64" -type f -print0 | xargs -n1 -0 -P10 "$SCRIPT_DIR/auto-analyze.sh"
