@@ -1,0 +1,23 @@
+version = 1
+revision = 3
+requires-python = ">=3.12"
+
+[[package]]
+name = "ida-scripts"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "idapro" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "idapro", specifier = ">=0.0.6" }]
+
+[[package]]
+name = "idapro"
+version = "0.0.6"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/04/8a/6fbc8d4e2bd6db5157b5edc085bcff300ac11138af0fecde63731fe701d5/idapro-0.0.6.tar.gz", hash = "sha256:f54e3e00f42c086329e38e35c995465c45edc1396e1b8d29c55739e04f0b67df", size = 976001, upload-time = "2025-09-10T17:00:54.371Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f7/34/cb2db98f1d6c249aa2379cea008254e761608b5a5fea43ad44056b8a6b0f/idapro-0.0.6-py3-none-any.whl", hash = "sha256:10bc39e9b3836ba3ed489f0eec7fff46f32815d40f67d94d4dfc26253bc23540", size = 2022832, upload-time = "2025-09-10T17:00:50.914Z" },
+]
